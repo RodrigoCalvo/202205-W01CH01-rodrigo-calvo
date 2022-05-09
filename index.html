@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta 4</title>
+    <link rel="shortcut icon" href="./conecta4.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link id="js-style-color" rel="stylesheet" href="./style.css">
+    <link id="js-style-bn" rel="stylesheet alternate" href="./style2.css">
+</head>
+<body>
+    <div class="menu" id="js-menu">
+        <div class="menu__info">
+            <h1 class="menu__title">Cone<span class="menu__title--red">cta 4</span></h1>
+            <p class="menu__info-text">
+                El objetivo de Conecta 4 es alinear cuatro fichas en el tablero. Por turnos, las personas jugadoras deben introducir una ficha en la columna que prefieran (siempre que no esté completa) haciendo click en la zona superior, y ésta caerá a la posición más baja. Gana la partida la primera que consiga alinear cuatro fichas consecutivas de un mismo color en horizontal, vertical o diagonal.
+            </p>
+        </div>
+        <div>
+            <input class="menu__button" id="js-play-vs-cpu-btn" type="button" value="Jugar vs CPU">
+            <input class="menu__button" id="js-play-one-vs-one-btn" type="button" value="Jugar 1vs1">
+            <input class="menu__button" id="js-bn-btn" type="button" value="B/n">
+        </div>
+    </div>
+    <div class="board-hub" id="js-board-hub">
+        <div class="turn" id="js-turn">Siguiente turno: <span class="turn__indicator turn__indicator--red" id="js-turn-indicator">red</span>.</div>
+        <input class="exit" id="js-exit-btn" type="button" value="Salir">
+    </div>
+    <div class="board" id="js-board">
+        <div class="board__square board__control-square" id="js-supboard-x0"></div>
+        <div class="board__square board__control-square" id="js-supboard-x1"></div>
+        <div class="board__square board__control-square" id="js-supboard-x2"></div>
+        <div class="board__square board__control-square" id="js-supboard-x3"></div>
+        <div class="board__square board__control-square" id="js-supboard-x4"></div>
+        <div class="board__square board__control-square" id="js-supboard-x5"></div>
+        <div class="board__square board__control-square" id="js-supboard-x6"></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y5"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y4"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y3"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y2"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y1"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x0y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x1y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x2y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x3y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x4y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x5y0"></div></div>
+        <div class="board__square board__playable-square"><div id="js-board-x6y0"></div></div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
